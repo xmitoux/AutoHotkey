@@ -1,9 +1,8 @@
 ; プログラム起動
 
-; VSCode
-~LShift:: {
-    Keywait("LShift", "U")
-    If (Keywait("LShift", "D T0.3") = 1)
+; ; VSCode
+~RShift:: {
+    if (ThisHotkey = A_PriorHotkey && A_TimeSincePriorHotkey < 200)
         if WinExist("ahk_exe code.exe")
             WinActivate
         else
@@ -12,9 +11,8 @@
 }
 
 ; Chrome
-~RShift:: {
-    Keywait("RShift", "U")
-    If (Keywait("RShift", "D T0.3") = 1)
+~LShift:: {
+    if (ThisHotkey = A_PriorHotkey && A_TimeSincePriorHotkey < 200)
         if WinExist("ahk_exe chrome.exe")
             WinActivate
         else
