@@ -42,3 +42,10 @@ F13 & u:: Send "^z"
 
 ; Redo
 F13 & i:: Send "^y"
+
+#HotIf !WinActive("ahk_class Code")
+
+; VSCode Ctrl + Shift + Enter
+F13 & Enter:: Send "{Home}{Enter}{Up}"
+
+#HotIf
