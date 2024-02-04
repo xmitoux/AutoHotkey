@@ -33,3 +33,12 @@ F13 & j:: Send "+{Home}{Delete}"
 
 ; End Delete
 F13 & k:: Send "+{End}{Delete}"
+
+; Paste
+F13 & y:: Send "^v"
+
+; Undo
+F13 & u:: Send "^z"
+
+; Redo
+F13 & i:: Send "^y"
