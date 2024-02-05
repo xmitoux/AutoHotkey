@@ -43,9 +43,21 @@ F13 & u:: Send "^z"
 ; Redo
 F13 & i:: Send "^y"
 
+; Esc
+F13 & w:: Send "{Esc}"
+
+; Ctrl + ←
+F13 & j:: Send "^{Left}"
+
+; Ctrl + →
+F13 & l:: Send "^{Right}"
+
+; 半角キー
+F13:: Send "{vkF3sc029}"
+
 #HotIf !WinActive("ahk_class Code")
 
-; VSCode Ctrl + Shift + Enter
-F13 & Enter:: Send "{Home}{Enter}{Up}"
+; VSCode Ctrl + Enter
+F13 & Enter:: Send "{End}{Enter}"
 
 #HotIf
