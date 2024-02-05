@@ -29,7 +29,7 @@ F13 & e:: Send "{End}"
 F13 & o:: Send "{Enter}"
 
 ; Home Delete
-F13 & j:: Send "+{Home}{Delete}"
+F13 & g:: Send "+{Home}{Delete}"
 
 ; End Delete
 F13 & k:: Send "+{End}{Delete}"
