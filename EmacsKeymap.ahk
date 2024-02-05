@@ -41,7 +41,7 @@ F13 & y:: Send "^v"
 F13 & u:: Send "^z"
 
 ; Redo
-F13 & i:: Send "^y"
+F13 & r:: Send "^y"
 
 ; Esc
 F13 & w:: Send "{Esc}"
