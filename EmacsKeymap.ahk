@@ -55,6 +55,9 @@ F13 & l:: Send "^{Right}"
 ; 半角キー
 F13:: Send "{vkF3sc029}"
 
+; 半角スペース前に置く
+F13 & Space:: Send "{Space}{Left}"
+
 #HotIf !WinActive("ahk_class Code")
 
 ; VSCode Ctrl + Enter
