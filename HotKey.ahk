@@ -1,17 +1,17 @@
-; VSCode Shift + Ctrl + Enter
+; Alt + Enter => (VSCode) Shift + Ctrl + Enter
 !Enter:: Send "{Home}{Enter}{Up}"
 
-; VSCode Paste
+; Ctrl + Shift + v => (VSCode) Paste
 ^+v:: Send "{Home}{Enter}{Up}^v"
 
-; PageDown
+; Alt + n => PageDown
 !n:: Send "{PgDn}"
 
-; PageUp
+; Alt + p => PageUp
 !p:: Send "{PgUp}"
 
-; Ctrl + PageDown
+; Alt + [ => Ctrl + PageUp
 ![:: Send "^{PgUp}"
 
-; Ctrl + PageUp
+; Alt + ] => Ctrl + PageDown
 !]:: Send "^{PgDn}"
