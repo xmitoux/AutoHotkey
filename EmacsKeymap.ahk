@@ -52,12 +52,16 @@ F13 & j:: Send "^{Left}"
 ; Ctrl + →
 F13 & l:: Send "^{Right}"
 
+; 保存
+F13 & s:: Send "^s"
+
 ; 半角キー
 F13:: Send "{vkF3sc029}"
 
-; 半角スペース前に置く
+; 半角スペースを前に置く
 F13 & Space:: Send "{Space}{Left}"
 
+; VSCode以外(挙動がおかしくなるので)
 #HotIf !WinActive("ahk_class Code")
 
 ; VSCode Ctrl + Enter
