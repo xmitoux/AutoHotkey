@@ -12,6 +12,8 @@ Insert:: Send "^+n"
 ^Delete:: Send "^+{Delete}"
 ; レイヤー名変更
 Home:: Send "{F4}"
+; レイヤー結合
+^End:: Send "^m"
 
 ; undo
 PrintScreen:: Send "^z"
