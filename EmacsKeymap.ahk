@@ -58,6 +58,9 @@ F13 & s:: Send "^s"
 ; 半角キー
 F13:: Send "{vkF3sc029}"
 
+; 全角キー
+F13 & RCtrl:: Send "{vkF2sc070}"
+
 ; 半角スペースを前に置く
 F13 & Space:: Send "{Space}{Left}"
 
