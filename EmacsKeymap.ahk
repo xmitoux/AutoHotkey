@@ -2,16 +2,44 @@
 ; 「ChgKey」でCapsLockをF13(0064)に変更している前提
 
 ; ↑
-F13 & p:: Send "{Up}"
+F13 & p::
+{
+    if GetKeyState("shift", "P") {
+        Send "+{Up}"
+    } else{
+        Send "{Up}"
+    }
+}
 
 ; ↓
-F13 & n:: Send "{Down}"
+F13 & n::
+{
+    if GetKeyState("shift", "P") {
+        Send "+{Down}"
+    } else{
+        Send "{Down}"
+    }
+}
 
 ; →
-F13 & f:: Send "{Right}"
+F13 & f::
+{
+    if GetKeyState("shift", "P") {
+        Send "+{Right}"
+    } else{
+        Send "{Right}"
+    }
+}
 
 ; ←
-F13 & b:: Send "{Left}"
+F13 & b::
+{
+    if GetKeyState("shift", "P") {
+        Send "+{Left}"
+    } else{
+        Send "{Left}"
+    }
+}
 
 ; Backspace
 F13 & h:: Send "{Backspace}"
@@ -20,10 +48,24 @@ F13 & h:: Send "{Backspace}"
 F13 & d:: Send "{Delete}"
 
 ; Home
-F13 & a:: Send "{Home}"
+F13 & a::
+{
+    if GetKeyState("shift", "P") {
+        Send "+{Home}"
+    } else{
+        Send "{Home}"
+    }
+}
 
 ; End
-F13 & e:: Send "{End}"
+F13 & e::
+{
+    if GetKeyState("shift", "P") {
+        Send "+{End}"
+    } else{
+        Send "{End}"
+    }
+}
 
 ; Enter
 F13 & o:: Send "{Enter}"
@@ -47,10 +89,24 @@ F13 & r:: Send "^y"
 F13 & w:: Send "{Esc}"
 
 ; Ctrl + ←
-F13 & j:: Send "^{Left}"
+F13 & j::
+{
+    if GetKeyState("shift", "P") {
+        Send "^+{Left}"
+    } else{
+        Send "^{Left}"
+    }
+}
 
 ; Ctrl + →
-F13 & l:: Send "^{Right}"
+F13 & l::
+{
+    if GetKeyState("shift", "P") {
+        Send "^+{Right}"
+    } else{
+        Send "^{Right}"
+    }
+}
 
 ; 保存
 F13 & s:: Send "^s"
