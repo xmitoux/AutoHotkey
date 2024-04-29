@@ -1,14 +1,12 @@
-; Alt + Enter => (VSCode) Shift + Ctrl + Enter
-!Enter:: Send "{Home}{Enter}{Up}"
-
-; Ctrl + Shift + v => (VSCode) Paste
-^+v:: Send "{Home}{Enter}{Up}^v"
-
 ; Alt + n => PageDown
 !n:: Send "{PgDn}"
 
 ; Alt + p => PageUp
 !p:: Send "{PgUp}"
+
+; Alt + Tab
+LAlt & k::AltTab
+LAlt & j::ShiftAltTab
 
 ; Paint.Net以外で使用
 #HotIf !WinActive("ahk_exe paintdotnet.exe")

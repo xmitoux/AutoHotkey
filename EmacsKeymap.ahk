@@ -63,11 +63,3 @@ F13 & RCtrl:: Send "{vkF2sc070}"
 
 ; 半角スペースを前に置く
 F13 & Space:: Send "{Space}{Left}"
-
-; VSCode以外(挙動がおかしくなるので)
-#HotIf !WinActive("ahk_class Code")
-
-; VSCode Ctrl + Enter
-F13 & Enter:: Send "{End}{Enter}"
-
-#HotIf
