@@ -76,6 +76,12 @@ F13 & i:: Send "+{Home}{Delete}"
 ; End Delete
 F13 & k:: Send "+{End}{Delete}"
 
+; Copy
+F13 & c:: Send "^c"
+
+; Cut
+F13 & x:: Send "^x"
+
 ; Paste
 F13 & y:: Send "^v"
 
