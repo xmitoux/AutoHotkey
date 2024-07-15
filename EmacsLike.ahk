@@ -126,9 +126,9 @@ F13 & RCtrl:: Send "{vkF2sc070}"
 ; 半角スペースを前に置く
 F13 & Space:: Send "{Space}{Left}"
 
-; 末尾にカンマを打って改行
+; 末尾にカンマを打つ
 F13 & ,:: {
     Send "{End}"
     SendText ","
-    Send "{Enter}"
+    ; Send "{Enter}"
 }
