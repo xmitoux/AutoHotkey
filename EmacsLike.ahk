@@ -6,7 +6,7 @@ F13 & p::
 {
     if GetKeyState("shift", "P") {
         Send "+{Up}"
-    } else{
+    } else {
         Send "{Up}"
     }
 }
@@ -16,7 +16,7 @@ F13 & n::
 {
     if GetKeyState("shift", "P") {
         Send "+{Down}"
-    } else{
+    } else {
         Send "{Down}"
     }
 }
@@ -26,7 +26,7 @@ F13 & f::
 {
     if GetKeyState("shift", "P") {
         Send "+{Right}"
-    } else{
+    } else {
         Send "{Right}"
     }
 }
@@ -36,7 +36,7 @@ F13 & b::
 {
     if GetKeyState("shift", "P") {
         Send "+{Left}"
-    } else{
+    } else {
         Send "{Left}"
     }
 }
@@ -52,7 +52,7 @@ F13 & a::
 {
     if GetKeyState("shift", "P") {
         Send "+{Home}"
-    } else{
+    } else {
         Send "{Home}"
     }
 }
@@ -62,7 +62,7 @@ F13 & e::
 {
     if GetKeyState("shift", "P") {
         Send "+{End}"
-    } else{
+    } else {
         Send "{End}"
     }
 }
@@ -99,7 +99,7 @@ F13 & j::
 {
     if GetKeyState("shift", "P") {
         Send "^+{Left}"
-    } else{
+    } else {
         Send "^{Left}"
     }
 }
@@ -109,7 +109,7 @@ F13 & l::
 {
     if GetKeyState("shift", "P") {
         Send "^+{Right}"
-    } else{
+    } else {
         Send "^{Right}"
     }
 }
@@ -125,3 +125,10 @@ F13 & RCtrl:: Send "{vkF2sc070}"
 
 ; 半角スペースを前に置く
 F13 & Space:: Send "{Space}{Left}"
+
+; 末尾にカンマを打って改行
+F13 & ,:: {
+    Send "{End}"
+    SendText ","
+    Send "{Enter}"
+}
